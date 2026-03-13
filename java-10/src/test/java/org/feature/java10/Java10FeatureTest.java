@@ -20,6 +20,9 @@ public class Java10FeatureTest {
         var f = Map.of();
         // null 不能推断
         // var g = null;
+
+        // lambda里面还不能用var，到11才可以
+//        Consumer<String> consumer = (var i) -> System.out.println(i);
     }
 
     @Test
